@@ -27,6 +27,13 @@ header h1 {
     letter-spacing: 1px;
 }
 
+.subtitle {
+    color: #9ca3af;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* Navigation */
 nav {
     margin-top: 1rem;
