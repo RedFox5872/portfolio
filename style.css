@@ -113,3 +113,11 @@ footer {
     border-top: 1px solid #222;
 }
 
+#contact a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
