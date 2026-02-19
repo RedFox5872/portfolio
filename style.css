@@ -37,12 +37,15 @@ header h1 {
 /* Navigation */
 nav {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: #9ca3af;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 8px 15px;
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
@@ -60,7 +63,7 @@ section {
 
 section h2 {
     font-size: 1.4rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     border-left: 4px solid #3b82f6;
     padding-left: 12px;
     color: #ffffff;
@@ -73,11 +76,21 @@ section h2 {
     border-radius: 10px;
     border: 1px solid #222;
     transition: transform 0.2s ease, border 0.2s ease;
+    margin-bottom: 1.5rem; /* spacing between multiple cards */
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    border: 1px solid #3b82f6;
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.card p {
+    margin-bottom: 0.8rem;
 }
 
 /* Lists */
@@ -104,15 +117,7 @@ p {
     color: #cbd5e1;
 }
 
-/* Footer (Optional if you add one later) */
-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    color: #6b7280;
-    font-size: 0.85rem;
-    border-top: 1px solid #222;
-}
-
+/* Contact Links */
 #contact a {
     color: #3b82f6;
     text-decoration: none;
@@ -121,3 +126,13 @@ footer {
 #contact a:hover {
     text-decoration: underline;
 }
+
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #6b7280;
+    font-size: 0.85rem;
+    border-top: 1px solid #222;
+}
+
