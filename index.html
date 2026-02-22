@@ -1,4 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Health Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
 
+    <h1>📊 SaaS Customer Health Dashboard</h1>
+
+    <div class="metrics">
+        <div class="card">
+            <h3>Monthly Recurring Revenue</h3>
+            <p id="mrr">$0</p>
+        </div>
+
+        <div class="card">
+            <h3>Churn Rate</h3>
+            <p id="churn">0%</p>
+        </div>
+
+        <div class="card">
+            <h3>Expansion Revenue</h3>
+            <p id="expansion">$0</p>
+        </div>
+
+        <div class="card">
+            <h3>Customer Health Score</h3>
+            <p id="health">0</p>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="revenueChart"></canvas>
+    </div>
+
+    <div class="renewals">
+        <h2>Upcoming Renewals</h2>
+        <ul id="renewalList"></ul>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
 
 
