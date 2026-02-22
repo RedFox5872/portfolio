@@ -8,9 +8,15 @@
 </head>
 <body>
 
-    <h1>📊 SaaS Customer Health Dashboard</h1>
+<div class="container">
 
-    <div class="metrics">
+    <header>
+        <h1>SaaS Customer Health Dashboard</h1>
+        <p class="subtitle">Retention & Revenue Monitoring Overview</p>
+    </header>
+
+    <!-- Metrics Section -->
+    <section class="metrics">
         <div class="card">
             <h3>Monthly Recurring Revenue</h3>
             <p id="mrr">$0</p>
@@ -27,19 +33,34 @@
         </div>
 
         <div class="card">
-            <h3>Customer Health Score</h3>
+            <h3>Avg. Customer Health</h3>
             <p id="health">0</p>
         </div>
-    </div>
+    </section>
 
-    <div class="chart-container">
+    <!-- Chart -->
+    <section class="chart-section">
+        <h2>Revenue Growth Trend</h2>
         <canvas id="revenueChart"></canvas>
-    </div>
+    </section>
 
-    <div class="renewals">
-        <h2>Upcoming Renewals</h2>
+    <!-- Renewals -->
+    <section class="renewals">
+        <h2>Upcoming Renewals & Risk Level</h2>
         <ul id="renewalList"></ul>
-    </div>
+    </section>
+
+    <!-- Insights -->
+    <section class="insights">
+        <h2>Strategic Insights</h2>
+        <ul>
+            <li>Churn above 3% suggests risk within mid-market accounts.</li>
+            <li>Expansion revenue indicates upsell potential among high-usage customers.</li>
+            <li>Accounts below 60 health score require proactive outreach before renewal.</li>
+        </ul>
+    </section>
+
+</div>
 
 <script src="script.js"></script>
 </body>
